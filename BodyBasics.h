@@ -79,6 +79,11 @@ private:
     ID2D1SolidColorBrush*   m_pBrushHandOpen;
     ID2D1SolidColorBrush*   m_pBrushHandLasso;
 
+    ID2D1SolidColorBrush*   m_pBrushPhoneTracked; // Create a new color to indicate that the person holding the phone is recognized
+
+    IDWriteFactory* m_pDWriteFactory;//*************
+    IDWriteTextFormat* m_pTextFormat;
+
     /// <summary>
     /// Main processing function
     /// </summary>
@@ -131,7 +136,7 @@ private:
     /// </summary>
     /// <param name="pJoints">joint data</param>
     /// <param name="pJointPoints">joint positions converted to screen space</param>
-    void                    DrawBody(const Joint* pJoints, const D2D1_POINT_2F* pJointPoints);
+    void                    DrawBody(const Joint* pJoints, const D2D1_POINT_2F* pJointPoints, ID2D1SolidColorBrush* brush = nullptr);//新增brush
 
     /// <summary>
     /// Draws a hand symbol if the hand is tracked: red circle = closed, green circle = opened; blue circle = lasso
@@ -148,6 +153,14 @@ private:
     /// <param name="pJointPoints">joint positions converted to screen space</param>
     /// <param name="joint0">one joint of the bone to draw</param>
     /// <param name="joint1">other joint of the bone to draw</param>
-    void                    DrawBone(const Joint* pJoints, const D2D1_POINT_2F* pJointPoints, JointType joint0, JointType joint1);
+    void                    DrawBone(const Joint* pJoints, const D2D1_POINT_2F* pJointPoints, JointType joint0, JointType joint1, ID2D1SolidColorBrush* brush = nullptr);
+    /// <summary>
+    
+    
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    HRESULT InitializeDirectWrite();
+    void DiscardDirectWriteResources();
 };
 
