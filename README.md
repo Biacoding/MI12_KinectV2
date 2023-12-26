@@ -25,6 +25,7 @@ This project is built on top of the official Kinect SDK, adding communication an
 3. The project will analyze sensor data and determine the person holding the mobile device.
 4. The person holding the mobile device will be highlighted with a blue marker.
 
+**For the complete project, please refer to:** [https://github.com/partherope/KinectBodyCapture.git](https://github.com/partherope/KinectBodyCapture.git)
 
 Thank you for your interest and support in the KinectV2 project!
 
