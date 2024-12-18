@@ -29,7 +29,5 @@ You can check presentaion in file "MI12_presentation.pdf"
 ### Note
 If you want to play the music, please change the path on line 165 and 173 in BodyBsic.cpp.
 
-**For the complete project, please refer to:** [https://github.com/partherope/KinectBodyCapture.git](https://github.com/partherope/KinectBodyCapture.git)
-
 Thank you for your interest and support in the KinectV2 project!
 
