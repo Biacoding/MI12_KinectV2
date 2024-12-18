@@ -3,6 +3,7 @@
 ## Project Overview
 
 This project is built on top of the official Kinect SDK, adding communication and data processing with mobile devices. It determines which individual is holding the mobile device by comparing the right-hand acceleration of each detected human body and highlights them with a blue marker.
+You can check presentaion in file "MI12_presentation.pdf"
 
 ## Key Features
 
