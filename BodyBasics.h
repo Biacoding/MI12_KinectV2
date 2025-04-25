@@ -7,6 +7,8 @@
 #pragma once
 
 #include "resource.h"
+#include <dwrite.h>
+#pragma comment(lib, "dwrite.lib")
 
 class CBodyBasics
 {
